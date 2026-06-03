@@ -10,6 +10,10 @@
   --font-sans: var(--font-inter);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #0d0d0d;
   color: #e5e5e5;

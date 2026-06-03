@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -8,9 +8,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Murmur — Speak. It types itself.",
+  metadataBase: new URL("https://murmur.madebyplume.com"),
+  title: "Murmur -- Speak. It types itself.",
   description:
-    "Murmur is a macOS dictation app that gets out of your way. Press a key, speak, release — your words land exactly where you're typing.",
+    "Native macOS dictation that lives in your menubar. Hold a key, say what you mean, let go. 100% local -- no cloud, no account, no tracking. Free download.",
   icons: {
     icon: [
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
@@ -19,11 +20,48 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Murmur — Speak. It types itself.",
+    title: "Murmur -- Speak. It types itself.",
     description:
-      "Murmur is a macOS dictation app that gets out of your way. Press a key, speak, release — your words land exactly where you're typing.",
+      "Native macOS dictation that lives in your menubar. 100% local, no cloud, no account. Free download for Apple Silicon Macs.",
     type: "website",
+    siteName: "Murmur",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Murmur -- Speak. It types itself.",
+      },
+    ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Murmur -- Speak. It types itself.",
+    description:
+      "Native macOS dictation. 100% local, no cloud, no account. Free.",
+  },
+  keywords: [
+    "dictation",
+    "macOS",
+    "speech to text",
+    "voice typing",
+    "whisper",
+    "local",
+    "privacy",
+    "menubar app",
+    "Apple Silicon",
+  ],
+  authors: [{ name: "Denver Miller" }],
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0d0d0d",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
