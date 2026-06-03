@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-amber: #C8845A;
+  --color-amber-hover: #d9956b;
+  --color-surface: #111111;
+  --color-surface-light: #1a1a1a;
+  --color-muted: #666666;
+  --color-muted-light: #999999;
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: #0d0d0d;
+  color: #e5e5e5;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+}
+
+::selection {
+  background: rgba(200, 132, 90, 0.3);
+}
