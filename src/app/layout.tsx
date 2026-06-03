@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://murmur.madebyplume.com"),
+  metadataBase: new URL("https://murmur.denvermilleriii.com"),
   title: "Murmur -- Speak. It types itself.",
   description:
     "Native macOS dictation that lives in your menubar. Hold a key, say what you mean, let go. 100% local -- no cloud, no account, no tracking. Free download.",
