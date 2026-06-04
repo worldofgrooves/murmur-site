@@ -128,7 +128,7 @@ export default function Home() {
           <div className="bg-[#111] border border-white/[0.06] rounded-2xl p-8 group hover:border-[#C8845A]/20 transition-colors">
             <div className="flex items-center gap-3 mb-4">
               <kbd className="px-2.5 py-1 text-xs font-mono bg-[#1a1a1a] border border-white/10 rounded-md text-[#999]">
-                Fn Space
+                Fn + Space
               </kbd>
               <span className="text-sm text-[#555]">toggle</span>
             </div>
