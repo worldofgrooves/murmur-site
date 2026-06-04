@@ -70,10 +70,9 @@ export default function Home() {
               What you say
             </p>
             <p className="text-[#666] text-lg leading-relaxed font-light italic">
-              &ldquo;so i was thinking um we should probably move the meeting to
-              thursday or maybe friday actually thursday works better period and
-              also like remind me to send the proposal before end of day
-              exclamation point&rdquo;
+              &ldquo;so i was thinking um we should meet on friday i mean
+              thursday period can you also like remind me to send the
+              proposal&rdquo;
             </p>
           </div>
           <div className="bg-[#111] p-8 md:p-10">
@@ -81,9 +80,8 @@ export default function Home() {
               What Murmur types
             </p>
             <p className="text-white text-lg leading-relaxed">
-              I was thinking we should move the meeting to Thursday -- actually,
-              Thursday works better. Also, remind me to send the proposal before
-              end of day!
+              I was thinking we should meet on Thursday. Can you also remind me
+              to send the proposal?
             </p>
           </div>
         </div>
