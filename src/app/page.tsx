@@ -2,7 +2,7 @@ import Image from "next/image";
 
 // Single source of truth for the current release. Bump this one value on
 // each new version; both download buttons derive their URL from it.
-const LATEST_VERSION = "1.2.42";
+const LATEST_VERSION = "1.2.43";
 const DMG_URL = `https://updates.madebyplume.com/murmur/Murmur-${LATEST_VERSION}-macOS26.3.dmg`;
 
 export default function Home() {
@@ -11,13 +11,13 @@ export default function Home() {
       {/* ── Hero ── */}
       <section className="w-full max-w-4xl mx-auto px-6 pt-28 pb-20 text-center">
         <div className="mb-8 relative">
-          <div className="absolute inset-0 blur-[80px] opacity-20 bg-[#C8845A] rounded-full scale-150 pointer-events-none" />
+          <div className="absolute inset-0 blur-[80px] opacity-20 bg-[#C8845A] rounded-full scale-150 pointer-events-none animate-[ambientPulse_4s_ease-in-out_infinite]" />
           <Image
             src="/icon.png"
             alt="Murmur"
             width={96}
             height={96}
-            className="mx-auto rounded-[22px] shadow-2xl relative z-10"
+            className="mx-auto rounded-[22px] shadow-2xl relative z-10 animate-[iconBreath_4s_ease-in-out_infinite]"
             priority
           />
         </div>
@@ -38,9 +38,27 @@ export default function Home() {
             <AppleIcon />
             Download for Mac
           </a>
+          <a
+            href="mailto:denver@madebyplume.com?subject=Murmur%20Bug%20Report&body=Version%3A%201.2.43%0A%0AWhat%20happened%3A%0A%0ASteps%20to%20reproduce%3A"
+            className="inline-block border border-white/[0.15] hover:border-white/[0.3] text-[#ccc] hover:text-white font-semibold px-8 py-4 rounded-full text-lg transition-colors"
+          >
+            Report a Bug
+          </a>
         </div>
         <p className="text-sm text-[#555] mt-4">
           Free &middot; macOS 14+ &middot; Apple Silicon
+        </p>
+        <p className="text-sm text-[#444] mt-2">
+          Built for the{" "}
+          <a
+            href="https://www.skool.com/robonuggets"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#C8845A] hover:text-[#d9956b] transition-colors"
+          >
+            RoboNuggets
+          </a>
+          {" "}community
         </p>
       </section>
 
@@ -110,7 +128,7 @@ export default function Home() {
           <div className="bg-[#111] border border-white/[0.06] rounded-2xl p-8 group hover:border-[#C8845A]/20 transition-colors">
             <div className="flex items-center gap-3 mb-4">
               <kbd className="px-2.5 py-1 text-xs font-mono bg-[#1a1a1a] border border-white/10 rounded-md text-[#999]">
-                &#x2325; Space
+                Fn Space
               </kbd>
               <span className="text-sm text-[#555]">toggle</span>
             </div>
@@ -242,10 +260,10 @@ export default function Home() {
             Download for Mac
           </a>
           <a
-            href="mailto:denver@madebyplume.com"
+            href="mailto:denver@madebyplume.com?subject=Murmur%20Bug%20Report&body=Version%3A%201.2.43%0A%0AWhat%20happened%3A%0A%0ASteps%20to%20reproduce%3A"
             className="inline-block border border-white/[0.15] hover:border-white/[0.3] text-[#ccc] hover:text-white font-semibold px-8 py-4 rounded-full text-lg transition-colors"
           >
-            Send Feedback
+            Report a Bug
           </a>
         </div>
       </section>
@@ -253,10 +271,8 @@ export default function Home() {
       {/* ── Footer ── */}
       <footer className="w-full max-w-3xl mx-auto px-6 pt-12 pb-16 text-center border-t border-white/[0.06]">
         <p className="text-xs text-[#444] leading-relaxed mb-4">
-          Murmur is provided free of charge as-is, without warranty of any kind.
-          By downloading and using Murmur, you agree that Denver Miller III
-          shall not be liable for any damages arising from its use. This
-          software is in active development -- use at your own risk.
+          Murmur is free, open beta software provided as-is. It&apos;s actively
+          developed and improving -- your bug reports make it better.
         </p>
         <p className="text-xs text-[#333]">
           <a

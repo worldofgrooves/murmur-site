@@ -23,3 +23,13 @@ body {
 ::selection {
   background: rgba(200, 132, 90, 0.3);
 }
+
+@keyframes iconBreath {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+}
+
+@keyframes ambientPulse {
+  0%, 100% { opacity: 0.2; transform: scale(1.5); }
+  50% { opacity: 0.35; transform: scale(1.65); }
+}
