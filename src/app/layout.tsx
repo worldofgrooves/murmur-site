@@ -9,7 +9,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://murmur.denvermilleriii.com"),
-  title: "Murmur -- Speak. It types itself.",
+  title: "Murmur — Stop Typing. Start Speaking.",
   description:
     "Native macOS dictation that lives in your menubar. Hold a key, say what you mean, let go. 100% local -- no cloud, no account, no tracking. Free download.",
   icons: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Murmur -- Speak. It types itself.",
+    title: "Murmur — Stop Typing. Start Speaking.",
     description:
       "Native macOS dictation that lives in your menubar. 100% local, no cloud, no account. Free download for Apple Silicon Macs.",
     type: "website",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Murmur -- Speak. It types itself.",
+    title: "Murmur — Stop Typing. Start Speaking.",
     description:
       "Native macOS dictation. 100% local, no cloud, no account. Free.",
   },
