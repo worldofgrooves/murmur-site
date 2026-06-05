@@ -19,12 +19,16 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-touch-icon.png",
   },
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Murmur -- Speak. It types itself.",
     description:
       "Native macOS dictation that lives in your menubar. 100% local, no cloud, no account. Free download for Apple Silicon Macs.",
     type: "website",
     siteName: "Murmur",
+    url: "/",
     images: [
       {
         url: "/og-image.png",

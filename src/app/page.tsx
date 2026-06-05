@@ -2,7 +2,7 @@ import Image from "next/image";
 
 // Single source of truth for the current release. Bump this one value on
 // each new version; both download buttons derive their URL from it.
-const LATEST_VERSION = "1.2.43";
+const LATEST_VERSION = "1.2.5";
 const DMG_URL = `https://updates.madebyplume.com/murmur/Murmur-${LATEST_VERSION}-macOS26.3.dmg`;
 
 export default function Home() {
