@@ -244,7 +244,7 @@ export default function Home() {
       {/* ── Bottom CTA ── */}
       <section className="w-full max-w-4xl mx-auto px-6 py-20 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-          Stop typing what you can say.
+          Stop Typing. Start Speaking.
         </h2>
         <p className="text-lg text-[#888] mb-10">
           Free download. No account required. Works offline.
