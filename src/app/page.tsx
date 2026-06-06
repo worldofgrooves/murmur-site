@@ -103,7 +103,7 @@ export default function Home() {
           <PipelineStep step="6" label="Paste" sub="At your cursor" />
         </div>
         <p className="text-center text-sm text-[#444] mt-6">
-          Every step runs locally. No internet required. No data leaves your Mac.
+          Every step runs locally when using Local Whisper. No internet required. No data leaves your Mac.
         </p>
       </section>
 
@@ -127,7 +127,7 @@ export default function Home() {
           <div className="bg-[#111] border border-white/[0.06] rounded-2xl p-8 group hover:border-[#C8845A]/20 transition-colors">
             <div className="flex items-center gap-3 mb-4">
               <kbd className="px-2.5 py-1 text-xs font-mono bg-[#1a1a1a] border border-white/10 rounded-md text-[#999]">
-                Fn + Space
+                ⌥ + Space
               </kbd>
               <span className="text-sm text-[#555]">toggle</span>
             </div>
@@ -146,7 +146,7 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           <Feature
             title="100% local"
-            description="Whisper runs on your Mac. Audio never touches a server. No account, no subscription, no telemetry."
+            description="Whisper runs on your Mac. Audio never touches a server. No account, no subscription."
           />
           <Feature
             title="Auto-learn dictionary"
@@ -170,7 +170,7 @@ export default function Home() {
           />
           <Feature
             title="LLM cleanup"
-            description="Optional local LLM pass via Ollama cleans up self-corrections and adds obvious punctuation. 2-second timeout, silent fallback."
+            description="Optional LLM pass cleans up self-corrections and adds obvious punctuation. Choose local Ollama for privacy or OpenAI GPT-4o-mini for accuracy. Silent fallback if unavailable."
           />
           <Feature
             title="Launch at login"
@@ -214,10 +214,10 @@ export default function Home() {
           No cloud. No account. No tracking.
         </h2>
         <p className="text-lg text-[#888] max-w-xl mx-auto leading-relaxed">
-          Murmur uses Apple&apos;s Whisper engine running directly on your Mac&apos;s
-          neural engine. Audio is recorded, transcribed, and discarded -- all in
-          a fraction of a second. When iCloud sync is enabled, only your
-          dictionary word pairs travel through iCloud. Audio never does.
+          Murmur uses the Whisper model running entirely on your Mac. Audio is
+          recorded, transcribed, and discarded -- all in a fraction of a second.
+          When iCloud sync is enabled, only your dictionary word pairs travel
+          through iCloud. Audio never does.
         </p>
       </section>
 
