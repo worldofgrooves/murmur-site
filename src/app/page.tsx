@@ -235,7 +235,7 @@ export default function Home() {
           <div className="text-left sm:text-right">
             <h3 className="text-lg font-semibold text-white mb-2">Optional</h3>
             <ul className="text-[#888] text-sm space-y-1">
-              <li>Ollama for LLM text cleanup</li>
+              <li>Ollama or OpenAI GPT-4o-mini for LLM text cleanup</li>
               <li>iCloud for dictionary sync</li>
             </ul>
           </div>
