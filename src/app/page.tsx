@@ -23,7 +23,7 @@ export default function Home() {
           />
         </div>
         <h1 className="text-5xl sm:text-7xl font-bold tracking-tight text-white mb-6 leading-[1.05]">
-          Stop Typing.<br className="sm:hidden" /> Start Speaking.
+          Stop Typing.<br /> Start Speaking.
         </h1>
         <p className="text-lg sm:text-xl text-[#999] max-w-2xl mx-auto mb-10 leading-relaxed">
           Murmur is a native macOS dictation app that lives in your menubar.
