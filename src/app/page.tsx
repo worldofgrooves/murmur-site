@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 // Single source of truth for the current release. Bump this one value on
 // each new version; both download buttons derive their URL from it.
@@ -272,6 +273,9 @@ export default function Home() {
           Murmur is free, open beta software provided as-is. It&apos;s actively
           developed and improving -- your bug reports make it better.
         </p>
+        <p className="text-xs text-[#333] mb-3">
+          © 2026 Denver Miller III. All rights reserved.
+        </p>
         <p className="text-xs text-[#333]">
           <a
             href="https://madebyplume.com"
@@ -281,6 +285,10 @@ export default function Home() {
           >
             Made by Plume
           </a>
+          <span className="mx-2">·</span>
+          <Link href="/terms" className="hover:text-[#555] transition-colors">
+            Terms of Use
+          </Link>
         </p>
       </footer>
     </main>
