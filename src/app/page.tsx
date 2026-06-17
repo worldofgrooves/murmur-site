@@ -3,7 +3,7 @@ import Link from "next/link";
 
 // Single source of truth for the current release. Bump this one value on
 // each new version; both download buttons derive their URL from it.
-const LATEST_VERSION = "1.3.003";
+const LATEST_VERSION = "1.3.004";
 const DMG_URL = `https://updates.madebyplume.com/murmur/Murmur-${LATEST_VERSION}-macOS26.3.dmg`;
 
 export default function Home() {
@@ -40,7 +40,7 @@ export default function Home() {
             Download for Mac
           </a>
           <a
-            href="mailto:denver@madebyplume.com?subject=Murmur%20Bug%20Report&body=Version%3A%201.3.003%0A%0AWhat%20happened%3A%0A%0ASteps%20to%20reproduce%3A"
+            href="mailto:denver@madebyplume.com?subject=Murmur%20Bug%20Report&body=Version%3A%201.3.004%0A%0AWhat%20happened%3A%0A%0ASteps%20to%20reproduce%3A"
             className="inline-block border border-white/[0.15] hover:border-white/[0.3] text-[#ccc] hover:text-white font-semibold px-8 py-4 rounded-full text-lg transition-colors"
           >
             Report a Bug
@@ -259,7 +259,7 @@ export default function Home() {
             Download for Mac
           </a>
           <a
-            href="mailto:denver@madebyplume.com?subject=Murmur%20Bug%20Report&body=Version%3A%201.3.003%0A%0AWhat%20happened%3A%0A%0ASteps%20to%20reproduce%3A"
+            href="mailto:denver@madebyplume.com?subject=Murmur%20Bug%20Report&body=Version%3A%201.3.004%0A%0AWhat%20happened%3A%0A%0ASteps%20to%20reproduce%3A"
             className="inline-block border border-white/[0.15] hover:border-white/[0.3] text-[#ccc] hover:text-white font-semibold px-8 py-4 rounded-full text-lg transition-colors"
           >
             Report a Bug
