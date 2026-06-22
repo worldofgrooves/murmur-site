@@ -28,8 +28,7 @@ export default function Home() {
         <p className="text-lg sm:text-xl text-[#999] max-w-2xl mx-auto mb-10 leading-relaxed">
           Murmur is a native macOS dictation app that lives in your menubar.
           Hold a key, say what you mean, let go. Your words appear wherever
-          your cursor is -- cleaned up, punctuated, and private.
-          Everything stays on your Mac.
+          your cursor is -- cleaned up, punctuated, and ready to use.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
@@ -47,7 +46,7 @@ export default function Home() {
           </a>
         </div>
         <p className="text-sm text-[#555] mt-4">
-          Free &middot; macOS 14+ &middot; Apple Silicon
+          Free &middot; macOS 14+ &middot; Apple Silicon and Intel
         </p>
         <p className="text-sm text-[#444] mt-2">
           Built for the{" "}
@@ -228,7 +227,7 @@ export default function Home() {
             <h3 className="text-lg font-semibold text-white mb-2">System requirements</h3>
             <ul className="text-[#888] text-sm space-y-1">
               <li>macOS 14 (Sonoma) or later</li>
-              <li>Apple Silicon (M1 / M2 / M3 / M4)</li>
+              <li>Apple Silicon (M1 / M2 / M3 / M4) or Intel</li>
               <li>Microphone access + Accessibility permission</li>
             </ul>
           </div>
