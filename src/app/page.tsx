@@ -144,8 +144,8 @@ export default function Home() {
         <SectionLabel>Built for how you actually talk</SectionLabel>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           <Feature
-            title="100% local"
-            description="Whisper runs on your Mac. Audio never touches a server. No account, no subscription."
+            title="Private by default"
+            description="With Local Whisper, audio is processed entirely on your Mac and never touches a server. Prefer speed? Groq transcribes in the cloud. Either way: no account, no subscription."
           />
           <Feature
             title="Auto-learn dictionary"
@@ -210,13 +210,14 @@ export default function Home() {
           <span className="text-sm text-[#888]">Private by architecture</span>
         </div>
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-          No cloud. No account. No tracking.
+          No account. No tracking.
         </h2>
         <p className="text-lg text-[#888] max-w-xl mx-auto leading-relaxed">
-          Murmur uses the Whisper model running entirely on your Mac. Audio is
-          recorded, transcribed, and discarded -- all in a fraction of a second.
-          When iCloud sync is enabled, only your dictionary word pairs travel
-          through iCloud. Audio never does.
+          With Local Whisper, the model runs entirely on your Mac -- audio is
+          recorded, transcribed, and discarded in a fraction of a second, and
+          never leaves the device. Groq is an optional cloud transcriber for
+          when you want more speed. When iCloud sync is enabled, only your
+          dictionary word pairs travel through iCloud -- audio never does.
         </p>
       </section>
 
@@ -247,7 +248,7 @@ export default function Home() {
           Download Murmur. It&apos;s free.
         </h2>
         <p className="text-lg text-[#888] mb-10">
-          Free download. No account required. Works offline.
+          Free download. No account required. Works offline with Local Whisper.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
