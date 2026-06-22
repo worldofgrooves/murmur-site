@@ -207,7 +207,7 @@ export default function Home() {
       <section className="w-full max-w-3xl mx-auto px-6 py-20 text-center">
         <div className="inline-flex items-center gap-2 bg-[#111] border border-white/[0.06] rounded-full px-5 py-2 mb-8">
           <LockIcon />
-          <span className="text-sm text-[#888]">Private by architecture</span>
+          <span className="text-sm text-[#888]">Private by default</span>
         </div>
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
           No account. No tracking.
