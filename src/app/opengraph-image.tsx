@@ -62,7 +62,7 @@ export default function OpengraphImage() {
             color: "#999999",
           }}
         >
-          Native macOS dictation. 100% local.
+          Native macOS dictation. Private with Local Whisper.
         </div>
       </div>
     ),

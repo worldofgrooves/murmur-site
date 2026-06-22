@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://murmur.denvermilleriii.com"),
   title: "Murmur — Stop Typing. Start Speaking.",
   description:
-    "Native macOS dictation that lives in your menubar. Hold a key, say what you mean, let go. 100% local -- no cloud, no account, no tracking. Free download.",
+    "Native macOS dictation that lives in your menubar. Hold a key, say what you mean, let go. Private on-device transcription with Local Whisper, no account, no tracking. Free download.",
   icons: {
     icon: [
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Murmur — Stop Typing. Start Speaking.",
     description:
-      "Native macOS dictation that lives in your menubar. 100% local, no cloud, no account. Free download for Apple Silicon Macs.",
+      "Native macOS dictation that lives in your menubar. Private on-device transcription with Local Whisper, no account. Free download for Apple Silicon and Intel Macs.",
     type: "website",
     siteName: "Murmur",
     url: "/",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Murmur — Stop Typing. Start Speaking.",
     description:
-      "Native macOS dictation. 100% local, no cloud, no account. Free.",
+      "Native macOS dictation. Private with Local Whisper, no account. Free.",
   },
   keywords: [
     "dictation",
