@@ -3,8 +3,8 @@ import Link from "next/link";
 
 // Single source of truth for the current release. Bump this one value on
 // each new version; both download buttons derive their URL from it.
-const LATEST_VERSION = "1.4.0";
-const DMG_URL = `https://updates.madebyplume.com/murmur/Murmur-${LATEST_VERSION}-macOS14.dmg`;
+const LATEST_VERSION = "1.4.001";
+const DMG_URL = `https://updates.madebyplume.com/murmur/Murmur-${LATEST_VERSION}.dmg`;
 
 export default function Home() {
   return (
