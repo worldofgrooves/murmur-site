@@ -2,9 +2,20 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Single source of truth for the current release. Bump this one value on
-// each new version; both download buttons derive their URL from it.
+// each new version; the download buttons AND the bug-report links all
+// derive from it.
 const LATEST_VERSION = "1.4.017";
 const DMG_URL = `https://updates.madebyplume.com/murmur/Murmur-${LATEST_VERSION}.dmg`;
+
+// Bug-report mailto, pre-filled with the version the reporter is running.
+// Derived rather than hardcoded: the literal it replaced sat at 1.3.006
+// for ten releases, so every report arrived stamped with a version nobody
+// was running.
+const BUG_REPORT_URL =
+  `mailto:denver@madebyplume.com?subject=${encodeURIComponent("Murmur Bug Report")}` +
+  `&body=${encodeURIComponent(
+    `Version: ${LATEST_VERSION}\n\nWhat happened:\n\nSteps to reproduce:`
+  )}`;
 
 export default function Home() {
   return (
@@ -39,7 +50,7 @@ export default function Home() {
             Download for Mac
           </a>
           <a
-            href="mailto:denver@madebyplume.com?subject=Murmur%20Bug%20Report&body=Version%3A%201.3.006%0A%0AWhat%20happened%3A%0A%0ASteps%20to%20reproduce%3A"
+            href={BUG_REPORT_URL}
             className="inline-block border border-white/[0.15] hover:border-white/[0.3] text-[#ccc] hover:text-white font-semibold px-8 py-4 rounded-full text-lg transition-colors"
           >
             Report a Bug
@@ -259,7 +270,7 @@ export default function Home() {
             Download for Mac
           </a>
           <a
-            href="mailto:denver@madebyplume.com?subject=Murmur%20Bug%20Report&body=Version%3A%201.3.006%0A%0AWhat%20happened%3A%0A%0ASteps%20to%20reproduce%3A"
+            href={BUG_REPORT_URL}
             className="inline-block border border-white/[0.15] hover:border-white/[0.3] text-[#ccc] hover:text-white font-semibold px-8 py-4 rounded-full text-lg transition-colors"
           >
             Report a Bug
