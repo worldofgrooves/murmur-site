@@ -113,7 +113,7 @@ export default function Home() {
           <PipelineStep step="6" label="Paste" sub="At your cursor" />
         </div>
         <p className="text-center text-sm text-[#444] mt-6">
-          Every step runs locally when using Local Whisper. No internet required. No data leaves your Mac.
+          Every step runs locally when using Local Whisper. Your audio and your words never leave your Mac. Murmur reports anonymous crash and failure diagnostics &mdash; error types and timings only, never your dictations.
         </p>
       </section>
 
