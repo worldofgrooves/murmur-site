@@ -4,7 +4,7 @@ import Link from "next/link";
 // Single source of truth for the current release. Bump this one value on
 // each new version; the download buttons AND the bug-report links all
 // derive from it.
-const LATEST_VERSION = "1.4.017";
+const LATEST_VERSION = "1.4.020";
 const DMG_URL = `https://updates.madebyplume.com/murmur/Murmur-${LATEST_VERSION}.dmg`;
 
 // Bug-report mailto, pre-filled with the version the reporter is running.
